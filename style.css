@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI';
+  height: 100vh;
+  background-color: #444;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.medias {
+  background-color: #fff;
+  width: 50%;
+  height: 400px;
+  padding: 20px 30px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.medias h1 {
+  text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.medias input,
+.medias button,
+.medias div.result,
+.status {
+  height: 40px; 
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  outline: none;
+}
+
+.medias input {
+  width: 100%;
+  border: 1px solid #ccc;
+  transition: 1s;
+}
+
+.medias input:focus {
+  border: 1px solid #2fd;
+}
+
+.medias div.result {
+  width: 45%;
+  background-color: rgb(191, 255, 245);
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 5%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.medias button {
+  width: 50%;
+  color: #fff;
+  border: none;
+  background-color: rgb(22, 101, 165);
+  transition: 1s;
+}
+
+.medias button:hover {
+  background-color: rgba(22, 101, 165, 0.7);
+}
+
+.status {
+  display: none;
+  width: 50%;
+  margin-top: 50px;
+  color: #222;
+  text-align: center;
+  padding-top: 7px;
+  font-weight: bold;
+}
+
+.aprov {
+  display: block;
+  background: #6cff78;
+}
+
+.rec {
+  display: block;
+  background: #ffcc6c;
+}
+
+.rep {
+  display: block;
+  color: #fff;
+  background: #ff6c6c;
+}
